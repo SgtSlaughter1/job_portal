@@ -22,9 +22,7 @@ export const useJobStore = defineStore("jobs", {
   },
 
   getters: {
-    getJobs() {
-      return this.jobs;
-    },
+    getJobs: (state) => state.jobs,
     isLoading() {
       return this.loading;
     },
