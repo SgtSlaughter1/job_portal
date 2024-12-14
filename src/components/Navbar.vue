@@ -30,8 +30,13 @@
                             </router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="/features">
+                            <router-link class="nav-link" to="/account-type">
                                 <i class="bi bi-person-plus"></i> Register
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/jobs">
+                                <i class="bi bi-briefcase"></i> Jobs
                             </router-link>
                         </li>
                     </ul>
@@ -58,8 +63,13 @@
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/features">
+                        <router-link class="nav-link" to="/account-type">
                             <i class="bi bi-person-plus"></i> Register
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/jobs">
+                            <i class="bi bi-briefcase"></i> Jobs
                         </router-link>
                     </li>
                 </ul>
