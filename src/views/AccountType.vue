@@ -37,7 +37,7 @@ import BaseButton from '@/components/BaseButton.vue';
 import { useRouter } from 'vue-router';
 
 export default {
-    name: 'Features',
+    name: 'AccountType',
     components: {
         BaseButton
     },

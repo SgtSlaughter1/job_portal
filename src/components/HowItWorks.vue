@@ -5,7 +5,7 @@ const router = useRouter();
 
 const handleStepClick = (title) => {
     if (title === 'Create Account') {
-        router.push('/features');
+        router.push('/account-type');
     }
 };
 
