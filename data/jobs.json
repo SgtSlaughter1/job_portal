@@ -1,0 +1,72 @@
+[
+{
+    "location": "Lagos",
+    "jobTitle": "Software Engineer",
+    "company": "Andela",
+    "pay": "₦ 8,000,000 - ₦ 12,000,000 per year",
+    "description": "Design, develop, and test software applications for Andela's clients. Collaborate with cross-functional teams to identify and prioritize project requirements."
+},
+{
+    "location": "Abuja",
+    "jobTitle": "Data Analyst",
+    "company": "Nigerian National Petroleum Corporation (NNPC)",
+    "pay": "₦ 6,000,000 - ₦ 10,000,000 per year",
+    "description": "Analyze complex data sets to identify trends and patterns. Develop reports and dashboards to drive business decisions."
+},
+{
+    "location": "Port Harcourt",
+    "jobTitle": "IT Project Manager",
+    "company": "Shell Nigeria",
+    "pay": "₦ 10,000,000 - ₦ 15,000,000 per year",
+    "description": "Manage IT projects from initiation to delivery. Collaborate with cross-functional teams to identify and prioritize project requirements and ensure successful project execution."
+},
+{
+    "location": "Lagos",
+    "jobTitle": "Cybersecurity Specialist",
+    "company": "First Bank of Nigeria",
+    "pay": "₦ 8,000,000 - ₦ 12,000,000 per year",
+    "description": "Design and implement secure network architectures and systems. Develop and implement threat detection and response strategies to protect First Bank's network and systems."
+},
+{
+    "location": "Ibadan",
+    "jobTitle": "Full Stack Developer",
+    "company": "Konga",
+    "pay": "₦ 5,000,000 - ₦ 9,000,000 per year",
+    "description": "Design and develop full-stack web applications for Konga's e-commerce platform. Collaborate with cross-functional teams to identify and prioritize project requirements."
+},
+{
+    "location": "Abuja",
+    "jobTitle": "Network Engineer",
+    "company": "MTN Nigeria",
+    "pay": "₦ 7,000,000 - ₦ 11,000,000 per year",
+    "description": "Design and implement secure network architectures and systems. Develop and implement threat detection and response strategies to protect MTN's network and systems."
+},
+{
+    "location": "Lagos",
+    "jobTitle": "Database Administrator",
+    "company": "Guaranty Trust Bank",
+    "pay": "₦ 6,000,000 - ₦ 10,000,000 per year",
+    "description": "Design and implement database architectures and systems. Collaborate with cross-functional teams to identify and prioritize project requirements."
+},
+{
+    "location": "Port Harcourt",
+    "jobTitle": "DevOps Engineer",
+    "company": "Chevron Nigeria",
+    "pay": "₦ 9,000,000 - ₦ 14,000,000 per year",
+    "description": "Design and implement automated deployment and testing systems. Collaborate with development teams to ensure smooth deployment of new features."
+},
+{
+    "location": "Lagos",
+    "jobTitle": "Artificial Intelligence Engineer",
+    "company": "Airtel Nigeria",
+    "pay": "₦ 8,000,000 - ₦ 12,000,000 per year",
+    "description": "Develop and implement AI and machine learning models for various business applications. Collaborate with researchers and engineers to design and develop new AI-powered systems."
+},
+{
+    "location": "Abuja",
+    "jobTitle": "Cloud Architect",
+    "company": "Nigerian Communications Commission (NCC)",
+    "pay": "₦ 10,000,000 - ₦ 15,000,000 per year",
+    "description": "Design and implement cloud-based architectures for NCC's enterprise customers. Collaborate with cross-functional teams to identify and prioritize project requirements."
+}
+]
