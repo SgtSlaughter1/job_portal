@@ -26,24 +26,16 @@ const companies = [
 <style scoped>
 
 section {
-    /* border: 2px solid aqua; */
     width: 70%;
     margin: 0 auto;
 }
 
-/* .container {
-    border: 1px solid aquamarine;
-} */
-
 .row {
     width: 60%;
     margin: 0 auto;
-    /* align-content: center; */
-    /* justify-content: center; */
+    justify-content: center;
     display: flex;
-
-    /* flex-wrap: nowrap; */
-    /* border: 1px solid red; */
+    flex-wrap: nowrap;
 }
 .company-logo {
     max-height: 50px;
