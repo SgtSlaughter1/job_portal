@@ -55,8 +55,8 @@
 
                         <p class="card-text">{{ job.description }}</p>
 
-                        <BaseButton @click="applyForJob(job)" class="w-40 btn-primary">
-                            Apply Now
+                        <BaseButton @click="viewJobDetails(job)" class="w-40 btn-primary">
+                            View Details
                         </BaseButton>
                     </div>
                 </div>
@@ -117,8 +117,8 @@ export default {
     },
 
     methods: {
-        applyForJob(job) {
-            console.log('Applying for job:', job.jobTitle)
+        viewJobDetails(job) {
+            this.$router.push(`/jobs/${job.id}`);
         }
     }
 }

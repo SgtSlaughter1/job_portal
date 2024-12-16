@@ -19,6 +19,9 @@ export const useJobStore = defineStore("jobs", {
         this.loading = false;
       }
     },
+    getJobById(id) {
+      return this.jobs.find(job => job.id === id);
+    }
   },
 
   getters: {
