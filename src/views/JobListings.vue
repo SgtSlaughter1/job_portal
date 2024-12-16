@@ -48,14 +48,14 @@
                             <span class="badge bg-info me-2">
                                 <i class="bi bi-geo-alt"></i> {{ job.location }}
                             </span>
-                            <span class="badge bg-success">
-                                <i class="bi bi-currency-dollar"></i> {{ job.pay }}
+                            <span class="badge bg-success mt-3">
+                                 {{ job.pay }}
                             </span>
                         </div>
 
                         <p class="card-text">{{ job.description }}</p>
 
-                        <BaseButton @click="applyForJob(job)" class="w-100 btn-primary">
+                        <BaseButton @click="applyForJob(job)" class="w-40 btn-primary">
                             Apply Now
                         </BaseButton>
                     </div>

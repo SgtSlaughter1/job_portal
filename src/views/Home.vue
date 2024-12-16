@@ -3,10 +3,9 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-12">
-                    <h1 class="display-4 fw-bold mb-4">Find Your Dream Job Today</h1>
+                    <h1 class="display-5 fw-bold mb-4">"Unlock Your Future: The Career You Deserve Awaits!"</h1>
                     <p class="lead mb-4">
-                        Discover thousands of job opportunities from top companies worldwide.
-                        Your next career move starts here.
+                        "Explore endless opportunities with leading companies around the globe. Start your journey to success today—your dream job is just a step away."
                     </p>
                     <div class="search-box bg-white p-2 rounded-pill shadow-lg">
                         <div class="input-group">
@@ -28,30 +27,17 @@
     <section class="job-listings my-5">
         <h2>Featured Job Openings</h2>
         <div class="row justify-content-center">
-            <div class="col-md-4 col-12 mb-4">
-                <div class="card">
+            <div v-for="job in featuredJobs" :key="job.jobTitle" class="col-md-4 col-12 mb-4">
+                <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Software Engineer</h5>
-                        <p class="card-text">Join our team to develop innovative software solutions.</p>
-                        <BaseButton>Apply Now</BaseButton>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Product Manager</h5>
-                        <p class="card-text">Lead product development and strategy for our new products.</p>
-                        <BaseButton>Apply Now</BaseButton>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">UX Designer</h5>
-                        <p class="card-text">Design user-friendly interfaces and enhance user experience.</p>
-                        <BaseButton>Apply Now</BaseButton>
+                        <h5 class="card-title">{{ job.jobTitle }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ job.company }}</h6>
+                        <div class="mb-3">
+                            <span class="badge bg-info me-2">{{ job.location }}</span>
+                            <span class="badge bg-success">{{ job.pay }}</span>
+                        </div>
+                        <p class="card-text">{{ job.description }}</p>
+                        <BaseButton @click="$router.push('/jobs')">View Details</BaseButton>
                     </div>
                 </div>
             </div>
@@ -66,6 +52,7 @@
 import BaseButton from '@/components/BaseButton.vue';
 import HowItWorks from '@/components/HowItWorks.vue';
 import TrustedCompanies from '@/components/TrustedCompanies.vue';
+import { useJobStore } from '@/stores/jobs';
 
 export default {
     components: {
@@ -73,6 +60,19 @@ export default {
         TrustedCompanies,
         HowItWorks,
     },
+    data() {
+        return {
+            jobStore: useJobStore()
+        }
+    },
+    computed: {
+        featuredJobs() {
+            return this.jobStore.getJobs.slice(0, 3);
+        }
+    },
+    created() {
+        this.jobStore.fetchJobs();
+    }
 }
 </script>
 
@@ -85,6 +85,8 @@ export default {
 
 .container {
     margin: 60px 50px;
+    /* border: 1px solid red; */
+
 }
 
 .search-box {
