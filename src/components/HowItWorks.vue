@@ -50,7 +50,7 @@ const steps = [
     },
     {
         icon: '🎯',
-        title: 'Get Hired',
+        title: 'Track your application',
         description: 'Land your dream job and start your new career'
     }
 ]

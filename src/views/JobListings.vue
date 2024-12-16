@@ -2,7 +2,7 @@
     <div class="job-listings container my-5">
         <h2 class="text-center mb-4">Available Job Opportunities</h2>
 
-        <div class="search-box bg-white p-2 rounded-pill shadow-lg">
+        <div class="search-box bg-white p-2 rounded-pill shadow-lg mb-4">
             <div class="input-group align-items-center">
                 <select v-model="searchField" class="form-select border-0 w-auto">
                     <option value="all">All Fields</option>
@@ -39,7 +39,7 @@
         <!-- Job Cards -->
         <div v-else class="row g-4">
             <div v-for="job in filteredJobs" :key="job.jobTitle" class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
+                <div class="card h-100 shadow-sm border-0 rounded">
                     <div class="card-body">
                         <h5 class="card-title text-primary">{{ job.jobTitle }}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">{{ job.company }}</h6>
@@ -55,7 +55,7 @@
 
                         <p class="card-text">{{ job.description }}</p>
 
-                        <BaseButton @click="applyForJob(job)" class="w-100">
+                        <BaseButton @click="applyForJob(job)" class="w-100 btn-primary">
                             Apply Now
                         </BaseButton>
                     </div>
@@ -147,16 +147,16 @@ export default {
 
 .card {
     transition: transform 0.2s ease-in-out;
-    border: none;
     border-radius: 10px;
 }
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .badge {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.5em 0.8em;
 }
 
@@ -167,5 +167,15 @@ export default {
 
 .card-subtitle {
     font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
 </style>
