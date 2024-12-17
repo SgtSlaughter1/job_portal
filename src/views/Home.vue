@@ -23,7 +23,6 @@
         </div>
     </section>
 
-
     <section class="job-listings my-5">
         <h2>Featured Job Openings</h2>
         <div class="row justify-content-center">
@@ -37,7 +36,9 @@
                             <span class="badge bg-success">{{ job.pay }}</span>
                         </div>
                         <p class="card-text">{{ job.description }}</p>
-                        <BaseButton @click="$router.push('/jobs')">View Details</BaseButton>
+                        <BaseButton @click="viewJobDetails(job)" class="w-40 btn-primary">
+                            View Details
+                        </BaseButton>
                     </div>
                 </div>
             </div>
@@ -70,6 +71,12 @@ export default {
             return this.jobStore.getJobs.slice(0, 3);
         }
     },
+
+    methods: {
+        viewJobDetails(job) {
+            this.$router.push(`/jobs/${job.id}`);
+        }
+    },
     created() {
         this.jobStore.fetchJobs();
     }
@@ -80,14 +87,9 @@ export default {
 .hero-section {
     overflow: hidden;
     background: linear-gradient(135deg, #4a90e2 0%, #2c3e50 100%);
-    padding: 60px 0;
-}
-
-.container {
-    margin: 60px 50px;
-    /* border: 1px solid red; */
 
 }
+
 
 .search-box {
     max-width: 100%;
@@ -154,4 +156,5 @@ export default {
     border-color: #0056b3;
     transform: scale(1.05);
 }
+
 </style>
