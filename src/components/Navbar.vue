@@ -14,16 +14,16 @@
                 
                 <div class="offcanvas-body">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#about">
                                 <i class="bi bi-info-circle"></i> About Us
                             </a>
-                        </li>
-                        <li class="nav-item">
+                        </li> -->
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#contact">
                                 <i class="bi bi-envelope"></i> Contact
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <router-link class="nav-link" to="/login">
                                 <i class="bi bi-box-arrow-in-right"></i> Login
@@ -46,16 +46,16 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#about">
                             <i class="bi bi-info-circle"></i> About Us
                         </a>
-                    </li>
-                    <li class="nav-item">
+                    </li> -->
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#contact">
                             <i class="bi bi-envelope"></i> Contact
                         </a>
-                    </li>
+                    </li> -->
                 
                     <li class="nav-item">
                         <router-link class="nav-link" to="/login">
