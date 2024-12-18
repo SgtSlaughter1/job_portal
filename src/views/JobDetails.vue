@@ -98,7 +98,15 @@ export default {
     created() {
         this.jobStore.fetchJobs();
         this.job = this.jobStore.getJobById(this.id);
-    }
+    }, 
+    methods: {
+        scrollToTop() {
+            window.scrollTo(0, 0);
+        }
+    },
+    mounted() {
+        this.scrollToTop();
+    },
 }
 </script>
 

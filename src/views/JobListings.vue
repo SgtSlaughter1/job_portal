@@ -119,8 +119,16 @@ export default {
     methods: {
         viewJobDetails(job) {
             this.$router.push(`/jobs/${job.id}`);
+        },
+
+        scrollToTop() {
+            window.scrollTo(0, 0);
         }
-    }
+    },
+    
+    mounted() {
+        this.scrollToTop();
+    },
 }
 </script>
 

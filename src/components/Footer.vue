@@ -12,7 +12,7 @@
             <div class="customer-service">
                 <h4>Customer Service</h4>
                 <a href="/help">Help Center</a>
-                <a href="/track-order">Track Order</a>
+                <a href="/track-order">Track Application</a>
                 <a href="/contact-support">Contact Support</a>
             </div>
             <div class="social-media">
