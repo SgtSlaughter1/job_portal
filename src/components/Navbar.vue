@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-navbar px-5">
         <div class="container-fluid">
             <a class="navbar-brand" href="/"> <i class="bi bi-briefcase mx-2"></i>Job Finder</a>
             <button class="btn btn-light d-lg-none" type="button" data-bs-toggle="offcanvas"
