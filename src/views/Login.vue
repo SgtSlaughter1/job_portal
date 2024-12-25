@@ -48,6 +48,8 @@ export default {
             const existingData = JSON.parse(localStorage.getItem('userData')) || [];
             const user = existingData.find(user => user.name === this.username && user.password === this.password);
             if (user) {
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('username', this.username);
                 this.showModal = true;
             } else {
                 this.loginError = 'Invalid name or password.';

@@ -5,6 +5,7 @@ import Home from '@/views/Home.vue'
 import AccountType from '@/views/AccountType.vue'
 import JobListings from '@/views/JobListings.vue'
 import JobDetails from '@/views/JobDetails.vue'
+import Dashboard from '@/views/Dashboard.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +24,11 @@ const router = createRouter({
       path: '/register',
       name: 'Register',
       component: Register
+    },
+    {
+      path: '/profile',
+      name: 'Profile',
+      component: Dashboard
     },
     {
       path: '/account-type',
